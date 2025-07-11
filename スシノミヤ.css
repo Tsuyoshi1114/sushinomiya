@@ -1,0 +1,340 @@
+/* ベース設定 */
+body {
+    font-family: 'Zen Maru Gothic', sans-serif;
+    background-color: #fdf6e3;
+    color: #333;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    /* やわらかいベージュ */
+}
+
+body {
+    background: linear-gradient(135deg, #fdf6e3, #fff8f0);
+}
+
+body {
+    background-color: #fdf6e3;
+    background-image:
+        repeating-linear-gradient(90deg,
+            rgba(228, 211, 179, 0.1),
+            rgba(228, 211, 179, 0.1) 2px,
+            transparent 2px,
+            transparent 6px),
+        linear-gradient(to bottom right,
+            rgba(255, 255, 255, 0.3),
+            rgba(0, 0, 0, 0.03));
+    background-size: 8px 100%, cover;
+    background-attachment: fixed;
+}
+
+
+
+/* 見出し */
+h1,
+h2 {
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: 600;
+    color: #2f2f2f;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.lead {
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+h2 {
+    font-size: 1.5rem;
+    border-bottom: 2px solid #d3aa52;
+    display: inline-block;
+    padding-bottom: 0.3rem;
+}
+
+header p.lead {
+    font-size: 1rem;
+}
+
+
+
+/* 段落やリスト */
+p {
+    margin-bottom: 1rem;
+}
+
+ul {
+    padding-left: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+li {
+    margin-bottom: 0.4rem;
+}
+
+/* スライドショー画像 */
+.carousel-item {
+    text-align: center;
+    /* 画像を中央寄せ */
+}
+
+.carousel-item img {
+    max-height: 200px;
+    /* 最大高さを指定（お好みで調整） */
+    max-width: 90%;
+    /* 最大幅は少し余白をつける */
+    width: auto;
+    /* 幅は自動調整 */
+    height: auto;
+    /* 高さは自動調整 */
+    margin: 0 auto;
+    /* 左右中央寄せ */
+    object-fit: contain;
+    /* 縦横比を保つ */
+    display: inline-block;
+}
+
+#multiCarousel {
+    margin-top: 2rem;
+    /* 好みに応じて 1rem〜3rem くらいで調整 */
+    background-color: #fdf1dc;
+    /* やわらかいベージュ */
+    padding: 1.5rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* 雰囲気写真 */
+img {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* セクション間の余白 */
+section {
+    margin-bottom: 3rem;
+}
+
+/* フッター */
+footer {
+    background-color: #f6f2e8;
+    color: #666;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    border-top: 1px solid #e0dccc;
+}
+
+/* Google Map iframe */
+iframe {
+    border: 0;
+    border-radius: 8px;
+}
+
+/* リンク */
+a {
+    color: #cc8800;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.title-shadow {
+    font-size: 2.5rem;
+    padding-left: 15px;
+    border-left: 5px solid #b36b00;
+    color: #3a2e1f;
+    text-shadow: 1px 1px 1px #ddd;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+/*Google fonts*/
+.rocknroll-one-regular {
+    font-family: "RocknRoll One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.btn-danger {
+    background: linear-gradient(45deg, #ff6b6b, #f94d6a);
+    border: none;
+    transition: background 0.3s ease;
+}
+
+.btn-danger:hover {
+    background: linear-gradient(45deg, #f94d6a, #ff6b6b);
+}
+
+
+
+/* メディアクエリ：スマホ */
+@media (max-width: 576px) {
+    .carousel-item .d-flex {
+        flex-direction: column;
+        /* ←画像を縦並びにする */
+        align-items: center;
+    }
+
+    .carousel-item img {
+        max-width: 100%;
+        height: auto;
+        max-height: 250px;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        padding: 0 1rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        padding: 0 1rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+        padding: 0.2rem 0.5rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 0.75rem 1.5rem;
+    }
+
+    a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:576px) {
+    section.mb-5 ul li {
+        font-size: 0.8rem;
+        /* 少し小さめ */
+        padding-right: 5px;
+        /* 横に余裕を持たせる */
+    }
+
+    section.mb-5 p a {
+        font-size: 0.9rem;
+    }
+}
+
+/* 🚪 ドア全体 */
+.door {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    pointer-events: none;
+    transition: transform 1s ease-in-out;
+    z-index: 9999;
+}
+
+/* 左ドア：画面左寄せ、閉じた状態 */
+#door-left {
+    left: 0;
+    transform: translateX(0);
+}
+
+/* 右ドア：画面右寄せ、閉じた状態 */
+#door-right {
+    right: 0;
+    transform: translateX(0);
+}
+
+/* 開くときのアニメーション */
+.open #door-left {
+    transform: translateX(-100%);
+}
+
+.open #door-right {
+    transform: translateX(100%);
+}
+
+/* 🌳 木枠（白色・太め） */
+.door .frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 30px solid #f9f4ea;
+    /* 太めの白枠 */
+    background: rgba(255, 255, 255, 0.05);
+    /* ほんのりガラス感 */
+    box-shadow:
+        inset 0 0 15px rgba(255, 255, 255, 0.8),
+        0 0 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+    z-index: 1;
+    /* 枠は下層 */
+}
+
+/* ✋ 取っ手（銀色グラデ・枠の上に重なる） */
+.handle {
+    position: absolute;
+    top: 50%;
+    width: 14px;
+    height: 90px;
+    background: linear-gradient(135deg, #c0c0c0, #f0f0f0, #a9a9a9);
+    border-radius: 7px;
+    box-shadow:
+        inset 2px 2px 5px #ffffff,
+        inset -2px -2px 5px #7a7a7a,
+        0 3px 6px rgba(0, 0, 0, 0.25);
+    transform: translateY(-50%);
+    opacity: 0.95;
+    z-index: 10;
+    /* 取っ手は枠の上 */
+}
+
+/* 左ドアの取っ手は枠内側にピタッと */
+#door-left .handle {
+    right: 30px;
+    /* 枠の幅と合わせてピタリ */
+}
+
+/* 右ドアの取っ手は枠内側にピタッと */
+#door-right .handle {
+    left: 30px;
+}
+
+/* 📱 スマホ対応 */
+@media (max-width: 576px) {
+    .door .frame {
+        border: 20px solid #f9f4ea;
+        box-shadow:
+            inset 0 0 12px rgba(255, 255, 255, 0.7),
+            0 0 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .handle {
+        width: 10px;
+        height: 70px;
+        border-radius: 5px;
+        box-shadow:
+            inset 1.5px 1.5px 4px #ffffff,
+            inset -1.5px -1.5px 4px #7a7a7a,
+            0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    #door-left .handle {
+        right: 20px;
+    }
+
+    #door-right .handle {
+        left: 20px;
+    }
+}

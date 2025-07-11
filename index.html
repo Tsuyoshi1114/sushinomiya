@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>スシノミヤ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="スシノミヤ.css" rel="stylesheet">
+
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=RocknRoll+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="door-left" class="door">
+        <div class="frame"></div>
+        <div class="handle"></div>
+    </div>
+    <div id="door-right" class="door">
+        <div class="frame"></div>
+        <div class="handle"></div>
+    </div>
+    <header class="text-center">
+        <!-- スライドショー -->
+        <!-- 🌐 PC用スライド（3枚並び） -->
+        <!-- PC用スライドショーの上に余白 -->
+        <div class="mt-4">
+            <div id="carouselPC" class="carousel slide d-none d-sm-block" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center gap-3">
+                            <img src="images/食べ物.jpg" class="img-fluid" style="max-height:200px;" alt="食べ物">
+                            <img src="images/スシノミヤカウンター.jpg" class="img-fluid" style="max-height:200px;" alt="カウンター">
+                            <img src="images/前菜三種.jpg" class="img-fluid" style="max-height:200px;" alt="前菜三種">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center gap-3">
+                            <img src="images/肉寿司.jpg" class="img-fluid" style="max-height:200px;" alt="肉寿司">
+                            <img src="images/お酒.jpg" class="img-fluid" style="max-height:200px;" alt="お酒">
+                            <img src="images/がりサワー.jpg" class="img-fluid" style="max-height:200px;" alt="がりサワー">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center gap-3">
+                            <img src="images/ネギトロ.jpg" class="img-fluid" style="max-height:200px;" alt="ネギトロ">
+                            <img src="images/バースデー.jpg" class="img-fluid" style="max-height:200px;" alt="バースデー">
+                            <img src="images/スシノミヤテーブル.jpg" class="img-fluid" style="max-height:200px;" alt="スシノミヤ全体">
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselPC" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselPC" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+
+            <!-- 📱 スマホ用スライド（1枚ずつ） -->
+            <!-- PC用スライドショーの上に余白 -->
+            <div class="mt-4">
+                <div id="carouselSP" class="carousel slide d-block d-sm-none" data-bs-ride="carousel">
+                    <div class="carousel-inner text-center">
+                        <div class="carousel-item active">
+                            <img src="images/食べ物.jpg" class="img-fluid" style="max-height:250px;" alt="食べ物">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/スシノミヤカウンター.jpg" class="img-fluid" style="max-height:250px;" alt="カウンター">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/前菜三種.jpg" class="img-fluid" style="max-height:250px;" alt="前菜三種">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/肉寿司.jpg" class="img-fluid" style="max-height:250px;" alt="肉寿司">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/お酒.jpg" class="img-fluid" style="max-height:250px;" alt="お酒">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/がりサワー.jpg" class="img-fluid" style="max-height:250px;" alt="がりサワー">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/ネギトロ.jpg" class="img-fluid" style="max-height:250px;" alt="がりサワー">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/バースデー.jpg" class="img-fluid" style="max-height:250px;" alt="がりサワー">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/スシノミヤテーブル.jpg" class="img-fluid" style="max-height:250px;" alt="がりサワー">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselSP"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselSP"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+
+                <h1 class="mt-4">スシノミヤ</h1>
+                <p class="lead">気軽に楽しめるお寿司とお酒のカジュアル居酒屋</p>
+    </header>
+
+
+    <main class="container my-5">
+
+        <!-- お知らせ -->
+        <section class="mb-5">
+            <h2>お知らせ</h2>
+            <p>現在、ランチ営業は行っておりません。夜の営業のみとなります。</p>
+        </section>
+
+        <!-- 食べログ予約リンク -->
+        <section class="mb-5 text-center">
+            <p><img src="images/スシノミヤロゴ透過.png" alt="ロゴ" style="max-height:250px;"></p>
+            <h2>ご予約はこちら</h2>
+            <p>食べログから簡単にご予約いただけます。</p>
+            <a href="https://tabelog.com/saitama/A1101/A110101/11061497/" target="_blank" class="btn btn-danger btn-lg">
+                食べログで予約する
+            </a>
+            <p class="mt-2">またはお電話：<strong>050-5594-0712</strong></p>
+        </section>
+
+        <!-- 営業時間 -->
+        <section class="mb-5">
+            <h2>営業時間</h2>
+            <ul>
+                <li><strong>月〜金：</strong>17:00～23:00（L.O. 22:30）</li>
+                <li><strong>土：</strong>15:00～23:00</li>
+                <li><strong>定休日：</strong>日曜・祝日</li>
+            </ul>
+            <p class="text-muted">※ランチ営業は現在行っておりません。</p>
+        </section>
+
+        <!-- こだわり -->
+        <section class="mb-5">
+            <h2>スシノミヤのこだわり</h2>
+            <ul>
+                <li>毎朝市場から仕入れる新鮮なネタ</li>
+                <li>一本一本丁寧に握る本格寿司</li>
+                <li>お酒に合うおつまみが充実</li>
+            </ul>
+        </section>
+
+        <!-- メニュー紹介 -->
+        <section class="mb-5">
+            <h2>人気メニュー</h2>
+            <ul>
+                <li>ねぎとろ軍艦</li>
+                <li>お刺身盛り合わせ</li>
+                <li>握り10貫</li>
+                <li>日本酒・がりサワー</li>
+            </ul>
+            <p><a href="スシノミヤメニュー.html" class="text-decoration-underline">▶ メニュー一覧はこちら</a></p>
+        </section>
+
+        <!-- 店の雰囲気 -->
+        <section class="mb-5">
+            <h2>お店の雰囲気</h2>
+            <p>落ち着いた照明と木の温もりが感じられる空間で、ゆっくりと食事をお楽しみいただけます。</p>
+
+            <!-- テーブル席 -->
+            <p>
+                <a class="text-decoration-underline" data-bs-toggle="collapse" href="#tablePhoto" role="button"
+                    aria-expanded="false" aria-controls="tablePhoto">
+                    ▶ テーブル席
+                </a>
+            </p>
+            <div class="collapse mb-3" id="tablePhoto">
+                <img src="images/スシノミヤテーブル.jpg" class="img-fluid rounded shadow-sm" alt="テーブル席">
+            </div>
+
+            <!-- カウンター席 -->
+            <p>
+                <a class="text-decoration-underline" data-bs-toggle="collapse" href="#counterPhoto" role="button"
+                    aria-expanded="false" aria-controls="counterPhoto">
+                    ▶ カウンター席
+                </a>
+            </p>
+            <div class="collapse mb-3" id="counterPhoto">
+                <img src="images/スシノミヤカウンター.jpg" class="img-fluid rounded shadow-sm" alt="カウンター席">
+            </div>
+
+            <!-- 内観 -->
+            <p>
+                <a class="text-decoration-underline" data-bs-toggle="collapse" href="#insidePhoto" role="button"
+                    aria-expanded="false" aria-controls="insidePhoto">
+                    ▶ 内観
+                </a>
+            </p>
+            <div class="collapse mb-3" id="insidePhoto">
+                <img src="images/スシノミヤ全体.jpg" class="img-fluid rounded shadow-sm" alt="内観">
+            </div>
+
+            <!-- 外観 -->
+            <p>
+                <a class="text-decoration-underline" data-bs-toggle="collapse" href="#outsidePhoto" role="button"
+                    aria-expanded="false" aria-controls="outsidePhoto">
+                    ▶ 外観
+                </a>
+            </p>
+            <div class="collapse mb-3" id="outsidePhoto">
+                <img src="images/スシノミヤ外観.jpg" class="img-fluid rounded shadow-sm" alt="外観">
+            </div>
+        </section>
+
+
+
+
+
+        <!-- アクセス -->
+        <section class="mb-5">
+            <h2>アクセス</h2>
+            <p>埼玉県さいたま市大宮区宮町4-4 花のシマムラビル1F（大宮駅東口徒歩5分）</p>
+            <div class="ratio ratio-16x9">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1600.5986779794646!2d139.62390354187897!3d35.91022405329063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z5Z-8546J55yM44GV44GE44Gf44G-5biC5aSn5a6u5Yy65a6u55S6NC00IOiKseOBruOCt-ODnuODoOODqeODk-ODqzFG!5e0!3m2!1sja!2sjp!4v1752211198341!5m2!1sja!2sjp"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-light text-center p-3">
+        <small>&copy; 2025 スシノミヤ</small>
+    </footer>
+
+
+
+
+    <script>
+        // ページ開いたら1秒後に扉を開ける例
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.body.classList.add('open');
+            }, 100);
+        });
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
